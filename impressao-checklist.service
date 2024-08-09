@@ -1,0 +1,17 @@
+[Unit]
+Description=Checklist de Inicialização
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/check.py
+WorkingDirectory=/home/
+StandardOutput=inherit
+StandardError=inherit
+Restart=on-failure
+RestartSec=10
+StartLimitInterval=0
+User=root
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
