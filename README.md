@@ -12,5 +12,3 @@ sudo nano /etc/systemd/system/impressao-checklist.service
 
 sudo systemctl daemon-reload
 sudo systemctl enable impressao-checklist.service
-
-teste de update
