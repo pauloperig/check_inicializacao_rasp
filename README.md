@@ -6,6 +6,7 @@ Instruções
 
 -Criar um serviço para execucao do script apos a inicializacao das placas de rede
 
+pip install netifaces --break-system-packages
 sudo nano /etc/systemd/system/impressao-checklist.service
 
 -Ativar o serviço
